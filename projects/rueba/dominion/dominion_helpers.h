@@ -11,12 +11,18 @@ int gainCard(int supplyPos, struct gameState *state, int toFlag, int player);
 int getCost(int cardNumber);
 
 int smithyEffect(int currentPlayer, struct gameState *state, int handPos);
-int adventurerEffect(int currentPlayer,struct gameState *state, int handPos, int temphand[], int z);
+int adventurerEffect(int currentPlayer,struct gameState *state, int handPos);
 int councilRoomEffect(int currentPlayer, struct gameState *state, int handPos);
 int greatHallEffect(int currentPlayer, struct gameState *state, int handPos);
 int stewardEffect(int currentPlayer, struct gameState *state, int handPos, int choice1, int choice2, int choice3);
 
+
 int cardEffect(int card, int choice1, int choice2, int choice3,
 	       struct gameState *state, int handPos, int *bonus);
+
+char* enum_to_string(enum CARD c);
+void printHand(struct gameState *state, int player);
+void printDeck(struct gameState *state, int player);
+int countTreasureCards(int array[], int length);
 
 #endif

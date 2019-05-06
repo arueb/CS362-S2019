@@ -12,6 +12,15 @@ playdom: dominion.o playdom.c
 testDrawCard: testDrawCard.c dominion.o rngs.o
 	gcc  -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
 
+testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
+	gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
+
+unittest1: unittest1.c dominion.o rngs.o
+	gcc -o unittest1 -g  unittest1.c dominion.o rngs.o $(CFLAGS)
+
+
+#########
+
 badTestDrawCard: badTestDrawCard.c dominion.o rngs.o
 	gcc -o badTestDrawCard -g  badTestDrawCard.c dominion.o rngs.o $(CFLAGS)
 
@@ -29,8 +38,6 @@ runtests: testDrawCard
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
-testUpdateCoins: testUpdateCoins.c dominion.o rngs.o
-	gcc -o testUpdateCoins -g  testUpdateCoins.c dominion.o rngs.o $(CFLAGS)
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
