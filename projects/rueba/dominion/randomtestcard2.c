@@ -1,7 +1,7 @@
 /******************************************************************************
  ** Author: Alex Rueb
- ** Date: 5/5/2019
- ** Description: Unit Test of Dominion codebase for Assignment 3
+ ** Date: 5/19/2019
+ ** Description: Random test suite for adventurerEffect() for Assignment 4
  ******************************************************************************/
 
 #include "dominion.h"
@@ -277,9 +277,6 @@ int main() {
   } else {
     printf("Some tests failed!\n");
   }
-
-
-
   printf("=============================================================== \n\n");
 
 

@@ -1,7 +1,7 @@
 /******************************************************************************
  ** Author: Alex Rueb
- ** Date: 5/5/2019
- ** Description: Unit Test of Dominion codebase for Assignment 3
+ ** Date: 5/19/2019
+ ** Description: Random test suite for smithyEffect() for Assignment 4
  ******************************************************************************/
 
 #include "dominion.h"
@@ -16,6 +16,7 @@
 typedef int bool;
 #define TRUE 1
 #define FALSE 0
+
 
 int ramdomGameState(struct gameState *state, int numPlayer){
   state->whoseTurn = rand() % numPlayer;
@@ -181,7 +182,7 @@ int main() {
   printf("otherDeckCount tests failed: %d\n", otherDeckCountFails);
   printf("returnVal tests failed: %d\n", returnValFails);
   printf("Execution time: %f seconds\n\n", secondsToRun);
-  
+
   if (totalFails == 0){
     printf("All tests passed!\n");
   } else {

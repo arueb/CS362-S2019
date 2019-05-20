@@ -1,7 +1,7 @@
 /******************************************************************************
  ** Author: Alex Rueb
- ** Date: 5/5/2019
- ** Description: Unit Test of Dominion codebase for Assignment 3
+ ** Date: 5/19/2019
+ ** Description: Random test suite for councilRoomEffect() for Assignment 4
  ******************************************************************************/
 
 #include "dominion.h"
@@ -75,7 +75,7 @@ int main() {
   clock_t startTime, endTime;
   double secondsToRun;
 
-  startTime = clock(); //start the timer  
+  startTime = clock(); //start the timer
 
   printf("\n\n=============================================================== \n");
   printf ("Testing %s:\n", fName);
