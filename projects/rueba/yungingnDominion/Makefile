@@ -113,8 +113,8 @@ cardtest3: cardtest3.c dominion.c rngs.c
 
 	echo "Result for running unit tests:" > cardtest3.out
 	echo "cardtest3.c:" >> unittest4.out
-	gcc -o -g cardtest3.c dominion.c rngs.c $(CFLAGS)
-	./a.out >> cardtest3.out
+	gcc -0 cardtest3 cardtest3.c dominion.c rngs.c $(CFLAGS)
+	./cardtest3 >> cardtest3.out
 	gcov dominion.c >> cardtest3.out -b -f
 
 cardtest4: cardtest4.c dominion.c rngs.c
