@@ -1,0 +1,933 @@
+Result for running unit tests:
+unittest1.c:
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Testing smithyEffect():
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Running test 1 for player 0... 
+
+initial hand: 
+card 0: smithy
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+hand after smithyEffect() called: 
+card 0: estate
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+card 5: copper
+card 6: copper
+card 7: copper
+card 8: estate
+handCount = 9, expected = 7
+*** ASSERT FAILED ***
+deckCount = 0, expected = 2
+*** ASSERT FAILED ***
+playedCardsCount = 1, expected = 1
+player 1 handCount = 5, expected = 5
+player 1 deckCount = 5, expected = 5
+player 1 discardCount = 0, expected = 0
+cardEffect return value = 0, expected = 0
+
+Running test 2 for player 1... 
+
+initial hand: 
+card 0: smithy
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+hand after smithyEffect() called: 
+card 0: estate
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+card 5: copper
+card 6: copper
+card 7: copper
+card 8: estate
+handCount = 9, expected = 7
+*** ASSERT FAILED ***
+deckCount = 0, expected = 2
+*** ASSERT FAILED ***
+playedCardsCount = 1, expected = 1
+player 0 handCount = 5, expected = 5
+player 0 deckCount = 5, expected = 5
+player 0 discardCount = 0, expected = 0
+cardEffect return value = 0, expected = 0
+
+Running test 3 for player 0... 
+
+initial hand: 
+card 0: copper
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+hand after smithyEffect() called: 
+card 0: INVALID ENUM
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+card 5: copper
+card 6: estate
+card 7: estate
+card 8: INVALID ENUM
+handCount = 9, expected = 7
+*** ASSERT FAILED ***
+deckCount = 3, expected = 0
+*** ASSERT FAILED ***
+playedCardsCount = 1, expected = 1
+player 1 handCount = 5, expected = 5
+player 1 deckCount = 3, expected = 3
+player 1 discardCount = 5, expected = 5
+cardEffect return value = 0, expected = 0
+
+Running test 4 for player 0... 
+
+initial hand: 
+card 0: smithy
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+hand after smithyEffect() called: 
+card 0: minion
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+card 5: sea_hag
+card 6: minion
+card 7: minion
+card 8: minion
+handCount = 9, expected = 7
+*** ASSERT FAILED ***
+deckCount = 1, expected = 3
+*** ASSERT FAILED ***
+playedCardsCount = 1, expected = 1
+player 1 handCount = 5, expected = 5
+player 1 deckCount = 1, expected = 1
+player 1 discardCount = 5, expected = 5
+cardEffect return value = 0, expected = 0
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Overall smithyEffect() result: Some tests failed!
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Function 'compare'
+Lines executed:83.33% of 6
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'kingdomCards'
+Lines executed:0.00% of 12
+No branches
+No calls
+
+Function 'initializeGame'
+Lines executed:93.59% of 78
+Branches executed:100.00% of 46
+Taken at least once:89.13% of 46
+No calls
+
+Function 'shuffle'
+Lines executed:100.00% of 18
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+No calls
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'numHandCards'
+Lines executed:0.00% of 1
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'supplyCount'
+Lines executed:0.00% of 1
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'whoseTurn'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 22
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'isGameOver'
+Lines executed:0.00% of 12
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'scoreFor'
+Lines executed:0.00% of 26
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+No calls
+
+Function 'getWinners'
+Lines executed:0.00% of 33
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+No calls
+
+Function 'drawCard'
+Lines executed:100.00% of 24
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+No calls
+
+Function 'getCost'
+Lines executed:0.00% of 30
+Branches executed:0.00% of 28
+Taken at least once:0.00% of 28
+No calls
+
+Function 'enum_to_string'
+Lines executed:53.33% of 30
+Branches executed:100.00% of 28
+Taken at least once:50.00% of 28
+No calls
+
+Function 'printHand'
+Lines executed:100.00% of 4
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'printDeck'
+Lines executed:100.00% of 4
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'countTreasureCards'
+Lines executed:100.00% of 7
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+Function 'cardEffect_adventurer'
+Lines executed:100.00% of 15
+Branches executed:100.00% of 12
+Taken at least once:100.00% of 12
+No calls
+
+Function 'cardEffect_smithy'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'cardEffect_village'
+Lines executed:100.00% of 4
+No branches
+No calls
+
+Function 'cardEffect_great_hall'
+Lines executed:100.00% of 5
+No branches
+No calls
+
+Function 'cardEffect_steward'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+No calls
+
+Function 'cardEffect'
+Lines executed:4.60% of 261
+Branches executed:12.71% of 181
+Taken at least once:1.66% of 181
+No calls
+
+Function 'discardCard'
+Lines executed:73.33% of 15
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+No calls
+
+Function 'gainCard'
+Lines executed:0.00% of 15
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'updateCoins'
+Lines executed:71.43% of 14
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+File 'dominion.c'
+Lines executed:30.75% of 696
+Branches executed:33.92% of 457
+Taken at least once:24.29% of 457
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+unittest2.c:
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Testing cardEffect_adventurer():
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Running test 1 for player 0... 
+
+initial hand: 
+card 0: adventurer
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+initial deck: 
+card 0: estate
+card 1: estate
+card 2: copper
+card 3: copper
+card 4: copper
+
+hand after cardEffect_adventurer() called: 
+card 0: adventurer
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+card 5: copper
+card 6: copper
+card 7: copper
+
+deck after cardEffect_adventurer() called: 
+
+treasure cards = 6, expected = 5
+*** ASSERT FAILED ***
+discarded cards = 2, expected = 3
+*** ASSERT FAILED ***
+player 1 handCount = 5, expected = 5
+player 1 deckCount = 5, expected = 5
+player 1 discardCount = 0, expected = 0
+cardEffect return value = 0, expected = 0
+
+Running test 2 for player 0... 
+
+initial hand: 
+card 0: adventurer
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+initial deck: 
+card 0: gold
+card 1: smithy
+card 2: duchy
+card 3: estate
+card 4: silver
+
+hand after cardEffect_adventurer() called: 
+card 0: adventurer
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+card 5: silver
+card 6: gold
+
+deck after cardEffect_adventurer() called: 
+
+treasure cards = 5, expected = 5
+discarded cards = 3, expected = 3
+player 1 handCount = 5, expected = 5
+player 1 deckCount = 5, expected = 5
+player 1 discardCount = 0, expected = 0
+cardEffect return value = 0, expected = 0
+
+Running test 3 for player 0... 
+
+initial hand: 
+card 0: adventurer
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+initial deck: 
+card 0: feast
+card 1: smithy
+card 2: silver
+card 3: estate
+card 4: steward
+
+hand after cardEffect_adventurer() called: 
+card 0: adventurer
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+card 5: silver
+
+deck after cardEffect_adventurer() called: 
+
+treasure cards = 4, expected = 4
+discarded cards = 4, expected = 4
+player 1 handCount = 5, expected = 5
+player 1 deckCount = 5, expected = 5
+player 1 discardCount = 0, expected = 0
+cardEffect return value = 0, expected = 0
+
+Running test 4 for player 0... 
+
+initial hand: 
+card 0: adventurer
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+initial deck: 
+card 0: feast
+card 1: smithy
+card 2: great_hall
+card 3: estate
+card 4: steward
+
+hand after cardEffect_adventurer() called: 
+card 0: adventurer
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+deck after cardEffect_adventurer() called: 
+
+treasure cards = 3, expected = 3
+discarded cards = 5, expected = 5
+player 1 handCount = 5, expected = 5
+player 1 deckCount = 5, expected = 5
+player 1 discardCount = 0, expected = 0
+cardEffect return value = 0, expected = 0
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Overall cardEffect_adventurer() result: Some tests failed!
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Function 'compare'
+Lines executed:83.33% of 6
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'kingdomCards'
+Lines executed:0.00% of 12
+No branches
+No calls
+
+Function 'initializeGame'
+Lines executed:93.59% of 78
+Branches executed:100.00% of 46
+Taken at least once:89.13% of 46
+No calls
+
+Function 'shuffle'
+Lines executed:100.00% of 18
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+No calls
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'numHandCards'
+Lines executed:0.00% of 1
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'supplyCount'
+Lines executed:0.00% of 1
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'whoseTurn'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 22
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'isGameOver'
+Lines executed:0.00% of 12
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'scoreFor'
+Lines executed:0.00% of 26
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+No calls
+
+Function 'getWinners'
+Lines executed:0.00% of 33
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+No calls
+
+Function 'drawCard'
+Lines executed:100.00% of 24
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+No calls
+
+Function 'getCost'
+Lines executed:0.00% of 30
+Branches executed:0.00% of 28
+Taken at least once:0.00% of 28
+No calls
+
+Function 'enum_to_string'
+Lines executed:53.33% of 30
+Branches executed:100.00% of 28
+Taken at least once:50.00% of 28
+No calls
+
+Function 'printHand'
+Lines executed:100.00% of 4
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'printDeck'
+Lines executed:100.00% of 4
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'countTreasureCards'
+Lines executed:100.00% of 7
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+Function 'cardEffect_adventurer'
+Lines executed:100.00% of 15
+Branches executed:100.00% of 12
+Taken at least once:100.00% of 12
+No calls
+
+Function 'cardEffect_smithy'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'cardEffect_village'
+Lines executed:100.00% of 4
+No branches
+No calls
+
+Function 'cardEffect_great_hall'
+Lines executed:100.00% of 5
+No branches
+No calls
+
+Function 'cardEffect_steward'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+No calls
+
+Function 'cardEffect'
+Lines executed:4.60% of 261
+Branches executed:12.71% of 181
+Taken at least once:1.66% of 181
+No calls
+
+Function 'discardCard'
+Lines executed:73.33% of 15
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+No calls
+
+Function 'gainCard'
+Lines executed:0.00% of 15
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'updateCoins'
+Lines executed:71.43% of 14
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+File 'dominion.c'
+Lines executed:30.75% of 696
+Branches executed:33.92% of 457
+Taken at least once:24.29% of 457
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+unittest3.c:
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Testing greatHallEffect():
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Running test 1 for player 0... 
+
+initial hand: 
+card 0: great_hall
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+hand after greatHallEffect() called: 
+card 0: copper
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+handCount = 5, expected = 5
+deckCount = 4, expected = 4
+numActions = 3, expected = 2
+*** ASSERT FAILED ***
+playedCardsCount = 1, expected = 1
+cardEffect return value = 0, expected = 0
+
+Running test 2 for player 1... 
+
+initial hand: 
+card 0: great_hall
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+hand after greatHallEffect() called: 
+card 0: copper
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+handCount = 5, expected = 5
+deckCount = 4, expected = 4
+numActions = 3, expected = 2
+*** ASSERT FAILED ***
+playedCardsCount = 1, expected = 1
+cardEffect return value = 0, expected = 0
+
+Running test 3 for player 0... 
+
+initial hand: 
+card 0: copper
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+hand after greatHallEffect() called: 
+card 0: copper
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+handCount = 5, expected = 5
+deckCount = 4, expected = 4
+numActions = 7, expected = 6
+*** ASSERT FAILED ***
+playedCardsCount = 1, expected = 1
+cardEffect return value = 0, expected = 0
+
+Running test 4 for player 0... 
+
+initial hand: 
+card 0: great_hall
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+
+hand after greatHallEffect() called: 
+card 0: sea_hag
+card 1: copper
+card 2: estate
+card 3: copper
+card 4: copper
+handCount = 5, expected = 5
+deckCount = 0, expected = 0
+numActions = 3, expected = 2
+*** ASSERT FAILED ***
+playedCardsCount = 1, expected = 1
+cardEffect return value = 0, expected = 0
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Overall greatHallEffect() result: Some tests failed!
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Function 'compare'
+Lines executed:83.33% of 6
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'kingdomCards'
+Lines executed:0.00% of 12
+No branches
+No calls
+
+Function 'initializeGame'
+Lines executed:93.59% of 78
+Branches executed:100.00% of 46
+Taken at least once:89.13% of 46
+No calls
+
+Function 'shuffle'
+Lines executed:100.00% of 18
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+No calls
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'numHandCards'
+Lines executed:0.00% of 1
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'supplyCount'
+Lines executed:0.00% of 1
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'whoseTurn'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 22
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'isGameOver'
+Lines executed:0.00% of 12
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'scoreFor'
+Lines executed:0.00% of 26
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+No calls
+
+Function 'getWinners'
+Lines executed:0.00% of 33
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+No calls
+
+Function 'drawCard'
+Lines executed:100.00% of 24
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+No calls
+
+Function 'getCost'
+Lines executed:0.00% of 30
+Branches executed:0.00% of 28
+Taken at least once:0.00% of 28
+No calls
+
+Function 'enum_to_string'
+Lines executed:53.33% of 30
+Branches executed:100.00% of 28
+Taken at least once:50.00% of 28
+No calls
+
+Function 'printHand'
+Lines executed:100.00% of 4
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'printDeck'
+Lines executed:100.00% of 4
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'countTreasureCards'
+Lines executed:100.00% of 7
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+Function 'cardEffect_adventurer'
+Lines executed:100.00% of 15
+Branches executed:100.00% of 12
+Taken at least once:100.00% of 12
+No calls
+
+Function 'cardEffect_smithy'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'cardEffect_village'
+Lines executed:100.00% of 4
+No branches
+No calls
+
+Function 'cardEffect_great_hall'
+Lines executed:100.00% of 5
+No branches
+No calls
+
+Function 'cardEffect_steward'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+No calls
+
+Function 'cardEffect'
+Lines executed:4.60% of 261
+Branches executed:12.71% of 181
+Taken at least once:1.66% of 181
+No calls
+
+Function 'discardCard'
+Lines executed:73.33% of 15
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+No calls
+
+Function 'gainCard'
+Lines executed:0.00% of 15
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'updateCoins'
+Lines executed:71.43% of 14
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+File 'dominion.c'
+Lines executed:30.75% of 696
+Branches executed:33.92% of 457
+Taken at least once:24.29% of 457
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+unittest4.c:

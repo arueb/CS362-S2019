@@ -1,0 +1,9 @@
+Undefined symbols for architecture x86_64:
+  "_cardEffect", referenced from:
+      _main in cardtest3-5c1fc3.o
+  "_initializeGame", referenced from:
+      _main in cardtest3-5c1fc3.o
+  "_printHand", referenced from:
+      _main in cardtest3-5c1fc3.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
